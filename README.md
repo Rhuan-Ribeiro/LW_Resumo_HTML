@@ -71,3 +71,9 @@ Além de servir como exercício, este material também funciona como um **resumo
 git clone https://github.com/seu-usuario/seu-repositorio.git
 ```
 2. Abra o arquivo index.html no navegador.
+
+---
+
+## Consulte nossa página
+
+url: https://rhuan-ribeiro.github.io/LW_Resumo_HTML/
