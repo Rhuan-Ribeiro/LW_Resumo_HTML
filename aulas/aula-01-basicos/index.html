@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Aula 1 de HTML - Estrutura básica e textos" />
+  <meta name="keywords" content="HTML, aula, estrutura básica, metatags, textos" />
+  <meta name="author" content="Professor" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Aula 1 - Fundamentos do HTML</title>
+
+  <!-- Favicon opcional -->
+  <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon" />
+
+  <!-- CSS opcional com o water.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+</head>
+
+<body id="topo">
+  <header>
+    <h1>Aula 1 - Fundamentos do HTML</h1>
+    <p>
+      Nesta aula, vamos conhecer a estrutura básica de uma página HTML e
+      entender como organizar conteúdos de texto.
+    </p>
+    <hr />
+  </header>
+
+  <main>
+    <!-- Índice da aula -->
+    <nav aria-label="Sumário da aula">
+      <h2>Conteúdo da Aula</h2>
+      <ol>
+        <li><a href="#conceito">O que é HTML</a></li>
+        <li><a href="#estrutura">Estrutura básica do documento</a></li>
+        <li><a href="#metatags">Metatags</a></li>
+        <li><a href="#comentarios">Comentários</a></li>
+        <li><a href="#atributos">Atributos</a></li>
+        <li><a href="#textos">Títulos, parágrafos e quebras</a></li>
+        <li><a href="#formatacao">Formatação de texto</a></li>
+      </ol>
+    </nav>
+
+    <hr />
+
+    <section id="conceito">
+      <h2>1. O que é HTML</h2>
+      <p>
+        HTML significa <strong>HyperText Markup Language</strong>, ou
+        <strong>Linguagem de Marcação de Hipertexto</strong>.
+      </p>
+      <p>
+        Ele é usado para <strong>estruturar o conteúdo</strong> de páginas
+        web, como títulos, parágrafos, imagens, links, listas e formulários.
+      </p>
+      <p>
+        HTML <strong>não é uma linguagem de programação</strong>. Ele é uma
+        linguagem de marcação.
+      </p>
+    </section>
+
+    <hr />
+
+    <section id="estrutura">
+      <h2>2. Estrutura básica do documento HTML</h2>
+      <p>
+        Todo documento HTML segue uma estrutura inicial parecida com esta:
+      </p>
+
+      <pre><code>&lt;!doctype html&gt;
+&lt;html lang="pt-BR"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;Título da página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Conteúdo visível da página
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+      <h3>Explicando cada parte</h3>
+      <ul>
+        <li>
+          <strong>&lt;!doctype html&gt;</strong> → informa ao navegador que o
+          documento usa HTML5.
+        </li>
+        <li><strong>&lt;html&gt;</strong> → elemento raiz da página.</li>
+        <li>
+          <strong>&lt;head&gt;</strong> → contém configurações e informações
+          do documento.
+        </li>
+        <li>
+          <strong>&lt;body&gt;</strong> → contém tudo o que será exibido na
+          tela.
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section id="metatags">
+      <h2>3. Metatags</h2>
+      <p>
+        As metatags ficam dentro do <strong>&lt;head&gt;</strong> e ajudam a
+        configurar a página.
+      </p>
+
+      <ul>
+        <li>
+          <strong>charset</strong> → define a codificação de caracteres.
+        </li>
+        <li><strong>description</strong> → descreve o conteúdo da página.</li>
+        <li>
+          <strong>keywords</strong> → palavras-chave relacionadas ao conteúdo.
+        </li>
+        <li><strong>author</strong> → autor do documento.</li>
+        <li>
+          <strong>viewport</strong> → ajuda na responsividade em telas
+          menores.
+        </li>
+      </ul>
+
+      <p>Exemplo:</p>
+
+      <pre><code>&lt;meta charset="UTF-8" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</code></pre>
+    </section>
+
+    <hr />
+
+    <section id="comentarios">
+      <h2>4. Comentários em HTML</h2>
+      <p>
+        Comentários servem para deixar observações no código. Eles
+        <strong>não aparecem na página</strong>.
+      </p>
+
+      <pre><code>&lt;!-- Isto é um comentário em HTML --&gt;</code></pre>
+
+      <p>Exemplo de uso:</p>
+
+      <pre><code>&lt;!-- Título principal da página --&gt;
+&lt;h1&gt;Minha primeira página&lt;/h1&gt;</code></pre>
+    </section>
+
+    <hr />
+
+    <section id="atributos">
+      <h2>5. Atributos</h2>
+      <p>
+        Os atributos ficam dentro das tags e fornecem informações extras ao
+        elemento.
+      </p>
+
+      <p>Exemplo:</p>
+
+      <pre><code>&lt;p title="Este é um parágrafo"&gt;Texto do parágrafo&lt;/p&gt;</code></pre>
+
+      <p>Alguns atributos comuns:</p>
+      <ul>
+        <li><strong>id</strong> → identificador único</li>
+        <li><strong>title</strong> → texto explicativo</li>
+        <li><strong>src</strong> → caminho de um arquivo, como imagem</li>
+        <li><strong>href</strong> → destino de um link</li>
+        <li><strong>lang</strong> → idioma do documento</li>
+      </ul>
+
+      <p>
+        Observação: alguns atributos aparecem em muitas tags, enquanto outros
+        são usados apenas em elementos específicos.
+      </p>
+    </section>
+
+    <hr />
+
+    <section id="textos">
+      <h2>6. Títulos, parágrafos e quebras</h2>
+
+      <h3>Títulos</h3>
+      <p>
+        O HTML possui seis níveis de títulos, do mais importante
+        <strong>&lt;h1&gt;</strong> ao menos importante
+        <strong>&lt;h6&gt;</strong>.
+      </p>
+
+      <pre><code>&lt;h1&gt;Título principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;h3&gt;Seção menor&lt;/h3&gt;</code></pre>
+
+      <p>Exemplo visual:</p>
+      <h3>Exemplo de título nível h3</h3>
+      <h4>Exemplo de título nível h4</h4>
+      <h5>Exemplo de título nível h5</h5>
+
+      <p>
+        Nesta própria página, o título principal da aula usa
+        <strong>&lt;h1&gt;</strong>, e os assuntos usam
+        <strong>&lt;h2&gt;</strong>.
+      </p>
+
+      <h3>Parágrafos</h3>
+      <p>
+        A tag <strong>&lt;p&gt;</strong> é usada para escrever parágrafos.
+      </p>
+
+      <pre><code>&lt;p&gt;Este é um parágrafo.&lt;/p&gt;
+&lt;p&gt;Este é outro parágrafo.&lt;/p&gt;</code></pre>
+
+      <h3>Quebra de linha</h3>
+      <p>
+        A tag <strong>&lt;br&gt;</strong> faz uma quebra de linha dentro do
+        texto.
+      </p>
+
+      <pre><code>&lt;p&gt;Linha 1&lt;br&gt;Linha 2&lt;/p&gt;</code></pre>
+
+      <p>Exemplo:</p>
+      <p>
+        Linha 1<br />
+        Linha 2
+      </p>
+
+      <h3>Linha horizontal</h3>
+      <p>
+        A tag <strong>&lt;hr&gt;</strong> cria uma linha horizontal para
+        separar conteúdos.
+      </p>
+
+      <pre><code>&lt;hr&gt;</code></pre>
+    </section>
+
+    <hr />
+
+    <section id="formatacao">
+      <h2>7. Formatação de texto</h2>
+      <p>Algumas tags ajudam a destacar partes importantes do texto.</p>
+
+      <ul>
+        <li><strong>&lt;strong&gt;</strong> → destaque forte</li>
+        <li><strong>&lt;em&gt;</strong> → ênfase</li>
+        <li><strong>&lt;mark&gt;</strong> → texto destacado</li>
+        <li><strong>&lt;small&gt;</strong> → texto menor</li>
+      </ul>
+
+      <p><strong>Exemplo com strong</strong></p>
+      <p><em>Exemplo com em</em></p>
+      <p><mark>Exemplo com mark</mark></p>
+      <p><small>Exemplo com small</small></p>
+
+      <p>
+        Observação: hoje em dia, a aparência visual da página deve ser
+        controlada principalmente com <strong>CSS</strong>.
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Conclusão</h2>
+      <p>
+        Nesta aula, vimos os fundamentos do HTML e a organização básica de uma
+        página web.
+      </p>
+      <p>
+        Na próxima aula, podemos avançar para elementos práticos como listas,
+        imagens e links.
+      </p>
+
+      <p><a href="#topo">Voltar ao topo</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p>Fim da Aula 1.</p>
+  </footer>
+</body>
+
+</html>

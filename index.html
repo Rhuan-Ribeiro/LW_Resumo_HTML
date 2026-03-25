@@ -1,165 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <meta name="description" content="Aula introdutória de HTML" />
-    <meta name="keywords" content="HTML, aula, web" />
-    <meta name="author" content="Professor" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Tags HTML</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Aulas</title>
+  <!-- Favicon opcional -->
+  <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css"> -->
-  </head>
-  <body id="topo">
-    <h1>Aula de Linguagem Web - HTML</h1>
+  <!-- CSS opcional com o water.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
 
-    <hr />
+<body>
 
-    <h2>1. Estrutura Básica do HTML</h2>
+  <header>
+    <h1>Portal de Aulas de Linguagem Web</h1>
+    <p>Bem-vindo(a)! Escolha uma aula para continuar.</p>
+  </header>
 
-    <h3>Metatags</h3>
-    <p>
-      As metatags ficam dentro do &lt;head&gt; e servem para configurar o
-      documento.
-    </p>
+  <main>
+    <section>
+      <h2>Aulas disponíveis</h2>
 
-    <ul>
-      <li>charset &#8594; Define a codificação de caracteres.</li>
-      <li>description &#8594; Descrição da página</li>
-      <li>keywords &#8594; Palavras-chave</li>
-      <li>author &#8594; Autor do site</li>
-      <li>viewport &#8594; Responsividade</li>
-    </ul>
+      <!-- Cada link pode levar para um arquivo HTML diferente -->
+      <p><a href="./aulas/aula-01-basicos/index.html">1. Principais Tags do HTML</a></p>
+      <p><a href="./aulas/aula-02-elementos/index.html">2. Listas, imagens e links</a></p>
+      <p><a href="./aulas/aula-03-forms/index.html">3. Formulários</a></p>
+    </section>
 
-    <!-- Trecho falando dos comentários em HTML -->
-    <h3>Comentários</h3>
-    <p>Comentários não aparecem na página. Exemplo:</p>
-    <p>&lt;!-- Isto é um comentário --&gt;</p>
+    <section>
+      <h2>Sobre este material</h2>
+      <p>Este ambiente foi organizado para reunir as páginas desenvolvidas durante as aulas práticas de HTML.</p>
+    </section>
+  </main>
 
-    <h3>Atributos e Especificações</h3>
-    <p style="color: red">
-      Os atributos ficam dentro das tags e fornecem informações extras.
-    </p>
+  <footer>
+    <p>Desenvolvido para fins educacionais.</p>
+  </footer>
 
-    <ul>
-      <li>href &#8594; usado em links</li>
-      <li>src &#8594; usado em imagens</li>
-      <li>id &#8594; identificador único</li>
-      <li>title &#8594; texto explicativo</li>
-    </ul>
+</body>
 
-    <hr />
-
-    <h2>2. Definição dos Conceitos de HTML</h2>
-
-    <p>
-      HTML é uma linguagem de marcação utilizada para publicação de documentos
-      na web.
-    </p>
-
-    <h3>Comandos (Tags)</h3>
-    <p>Exemplos de tags:</p>
-    <ul>
-      <li>&lt;p&gt; → Parágrafo</li>
-      <li>&lt;br&gt; → Quebra de linha</li>
-      <li>&lt;hr&gt; → Linha horizontal</li>
-      <li>&lt;div&gt; → Divisão de conteúdo</li>
-      <li>&lt;span&gt; → Agrupa conteúdo em linha (inline)</li>
-    </ul>
-
-    <h3>Formatação de Frases</h3>
-    <p><strong>Texto em negrito</strong></p>
-    <p><em>Texto em itálico</em></p>
-    <p><u>Texto sublinhado</u></p>
-    <p><mark>Texto destacado</mark></p>
-    <p><small>Texto menor</small></p>
-
-    <h3>Cabeçalhos</h3>
-    <h1>Exemplo H1</h1>
-    <h2>Exemplo H2</h2>
-    <h3>Exemplo H3</h3>
-    <h4>Exemplo H4</h4>
-    <h5>Exemplo H5</h5>
-    <h6>Exemplo H6</h6>
-
-    <hr />
-
-    <h2>3. Propriedades (usando HTML)</h2>
-
-    <p>Antigamente era comum usar atributos HTML para definir:</p>
-
-    <ul>
-      <li>Cor</li>
-      <li>Fonte</li>
-      <li>Tamanho</li>
-      <li>Background</li>
-      <li>Foreground</li>
-    </ul>
-
-    <p>
-      <font color="blue" size="5"
-        >Exemplo de texto com cor e tamanho usando a tag font (obsoleta no
-        HTML5).</font
-      >
-    </p>
-
-    <hr />
-
-    <h2>4. Listas</h2>
-
-    <h3>Lista Não Ordenada</h3>
-    <ul>
-      <li>Item A</li>
-      <li>Item B</li>
-      <li>Item C</li>
-    </ul>
-
-    <h3>Lista Ordenada</h3>
-    <ol>
-      <li>Primeiro</li>
-      <li>Segundo</li>
-      <li>Terceiro</li>
-    </ol>
-
-    <h3>Lista de Termos / Definições</h3>
-    <dl>
-      <dt>HTML</dt>
-      <dd>Linguagem de marcação para páginas web.</dd>
-
-      <dt>Navegador</dt>
-      <dd>Programa usado para visualizar páginas web.</dd>
-    </dl>
-
-    <hr />
-
-    <h3>5. Imagens</h3>
-    <p>Usamos a tag &lt;img&gt; para inserir imagens:</p>
-
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-      alt="Logo do HTML5"
-      width="150"
-    />
-
-    <ul>
-      <li>src → caminho da imagem</li>
-      <li>alt → descrição da imagem</li>
-      <li>width → largura</li>
-    </ul>
-
-    <hr>
-
-    <h2>6. Inserção de Links</h2>
-
-    <h3>Link Externo</h3>
-    <a href="https://www.google.com" target="_blank"> Acessar Google </a>
-
-    <h3>Link Interno</h3>
-    <p><a href="#topo">Voltar ao topo da página</a></p>
-
-    <hr />
-
-    <p>Fim da aula introdutória de HTML.</p>
-  </body>
 </html>

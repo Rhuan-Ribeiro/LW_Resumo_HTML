@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Aula 2 de HTML - Listas, imagens e links" />
+  <meta name="keywords" content="HTML, aula, listas, imagens, links" />
+  <meta name="author" content="Professor" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Aula 2 - Listas, Imagens e Links</title>
+
+  <!-- Favicon opcional -->
+  <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon" />
+
+  <!-- CSS opcional com o water.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+</head>
+
+<body id="topo">
+  <header>
+    <h1>Aula 2 - Listas, Imagens e Links</h1>
+    <p>
+      Nesta aula, vamos trabalhar com elementos muito usados em páginas web:
+      listas, imagens e links.
+    </p>
+    <hr />
+  </header>
+
+  <main>
+    <nav aria-label="Sumário da aula">
+      <h2>Conteúdo da Aula</h2>
+      <ol>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#imagens">Imagens</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#atividade">Exemplo prático</a></li>
+      </ol>
+    </nav>
+
+    <hr />
+
+    <section id="listas">
+      <h2>1. Listas</h2>
+      <p>
+        As listas servem para organizar informações de forma clara e visual.
+      </p>
+
+      <h3>Lista não ordenada</h3>
+      <p>
+        A lista não ordenada usa a tag <strong>&lt;ul&gt;</strong> e exibe
+        marcadores.
+      </p>
+
+      <pre><code>&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+      <p>Exemplo:</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <h3>Lista ordenada</h3>
+      <p>
+        A lista ordenada usa a tag <strong>&lt;ol&gt;</strong> e apresenta os
+        itens em sequência numérica.
+      </p>
+
+      <pre><code>&lt;ol&gt;
+  &lt;li&gt;Abrir o editor&lt;/li&gt;
+  &lt;li&gt;Criar o arquivo HTML&lt;/li&gt;
+  &lt;li&gt;Salvar a página&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+      <p>Exemplo:</p>
+      <ol>
+        <li>Abrir o editor</li>
+        <li>Criar o arquivo HTML</li>
+        <li>Salvar a página</li>
+      </ol>
+
+      <h3>Lista de definição</h3>
+      <p>
+        A lista de definição usa as tags <strong>&lt;dl&gt;</strong>,
+        <strong>&lt;dt&gt;</strong> e <strong>&lt;dd&gt;</strong>.
+      </p>
+
+      <pre><code>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;Linguagem de marcação para páginas web.&lt;/dd&gt;
+
+  &lt;dt&gt;Navegador&lt;/dt&gt;
+  &lt;dd&gt;Programa usado para abrir sites.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+      <p>Exemplo:</p>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para páginas web.</dd>
+
+        <dt>Navegador</dt>
+        <dd>Programa usado para abrir sites.</dd>
+      </dl>
+    </section>
+
+    <hr />
+
+    <section id="imagens">
+      <h2>2. Imagens</h2>
+      <p>
+        A tag <strong>&lt;img&gt;</strong> é usada para inserir imagens em uma
+        página.
+      </p>
+
+      <pre><code>&lt;img
+  src="caminho-da-imagem.jpg"
+  alt="Descrição da imagem"
+  width="200"
+/&gt;</code></pre>
+
+      <h3>Principais atributos</h3>
+      <ul>
+        <li><strong>src</strong> → caminho da imagem</li>
+        <li><strong>alt</strong> → descrição da imagem</li>
+        <li><strong>width</strong> → largura da imagem</li>
+        <li><strong>height</strong> → altura da imagem</li>
+        <li><strong>title</strong> → texto de apoio ao passar o mouse</li>
+      </ul>
+
+      <h3>Exemplo com imagem externa</h3>
+      <p>
+        Neste exemplo, a imagem está sendo carregada a partir de um endereço
+        da internet.
+      </p>
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo do HTML5"
+        width="150" title="Logo do HTML5" />
+
+      <h3>Observação importante</h3>
+      <p>
+        O atributo <strong>alt</strong> é muito importante para acessibilidade
+        e também para casos em que a imagem não carrega corretamente.
+      </p>
+    </section>
+
+    <hr />
+
+    <section id="links">
+      <h2>3. Links</h2>
+      <p>
+        Os links são criados com a tag <strong>&lt;a&gt;</strong> e servem
+        para levar o usuário a outra página, site ou parte do documento.
+      </p>
+
+      <pre><code>&lt;a href="https://www.google.com"&gt;Acessar Google&lt;/a&gt;</code></pre>
+
+      <h3>Link externo</h3>
+      <p>Um link externo leva o usuário para outro site.</p>
+
+      <p>
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          Acessar Google
+        </a>
+      </p>
+
+      <p>Neste exemplo:</p>
+      <ul>
+        <li><strong>href</strong> → define o destino do link</li>
+        <li><strong>target="_blank"</strong> → abre em nova aba</li>
+        <li>
+          <strong>rel="noopener noreferrer"</strong> → melhora a segurança ao
+          abrir nova aba
+        </li>
+      </ul>
+
+      <h3>Link interno</h3>
+      <p>Um link interno leva o usuário para outra parte da mesma página.</p>
+
+      <pre><code>&lt;a href="#topo"&gt;Voltar ao topo&lt;/a&gt;</code></pre>
+
+      <p><a href="#topo">Voltar ao topo da página</a></p>
+
+      <h3>Link para outra página do projeto</h3>
+      <p>
+        Também podemos criar links para outros arquivos HTML do mesmo projeto.
+      </p>
+
+      <pre><code>&lt;a href="aula1.html"&gt;Ir para a Aula 1&lt;/a&gt;</code></pre>
+
+      <p><a href="aula1.html">Ir para a Aula 1</a></p>
+    </section>
+
+    <hr />
+
+    <section id="atividade">
+      <h2>4. Exemplo prático</h2>
+      <p>
+        Abaixo há um pequeno exemplo juntando lista, imagem e link em uma
+        mesma seção.
+      </p>
+
+      <h3>Recursos para estudar HTML</h3>
+
+      <ul>
+        <li>Aprender a estrutura básica</li>
+        <li>Praticar tags de conteúdo</li>
+        <li>Testar exemplos no navegador</li>
+      </ul>
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+        alt="Logo do HTML5 usada como exemplo" width="120" />
+
+      <p>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+          Acessar material de referência sobre HTML
+        </a>
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Conclusão</h2>
+      <p>
+        Nesta aula, vimos como organizar conteúdos em listas, inserir imagens
+        e criar links em HTML.
+      </p>
+      <p>
+        Esses elementos são muito usados no desenvolvimento de páginas web e
+        aparecem com frequência em sites, sistemas e portais.
+      </p>
+
+      <p><a href="#topo">Voltar ao topo</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p>Fim da Aula 2.</p>
+  </footer>
+</body>
+
+</html>
