@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introdução ao CSS</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="topo">
+    <h1>Introdução ao CSS</h1>
+    <p class="subtitulo">
+      Exemplo prático de site para aprender seletores, cores, tipografia, espaçamento e alinhamento.
+    </p>
+  </header>
+
+  <nav class="menu">
+    <a href="#sobre">Sobre</a>
+    <a href="#conteudos">Conteúdos</a>
+    <a href="#exemplo">Exemplo</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main class="container">
+
+    <section id="sobre" class="bloco">
+      <h2>Sobre esta página</h2>
+      <p>
+        Esta página foi criada para servir como exemplo em uma aula de CSS básico.
+        Ela possui textos, botões, caixas, links e seções organizadas para facilitar
+        a aplicação de estilos.
+      </p>
+      <p>
+        O objetivo é observar como o CSS modifica a aparência de uma página HTML por meio
+        de seletores, propriedades e valores.
+      </p>
+    </section>
+
+    <section id="conteudos" class="bloco">
+      <h2>Conteúdos trabalhados</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Seletores</h3>
+          <p>
+            Podemos estilizar elementos pela tag, por classe ou por id.
+          </p>
+        </div>
+
+        <div class="card destaque">
+          <h3>Cores e tipografia</h3>
+          <p>
+            É possível alterar cor do texto, cor de fundo, tamanho da fonte e alinhamento.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Box Model</h3>
+          <p>
+            Todo elemento pode ter margem, preenchimento e borda.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="exemplo" class="bloco">
+      <h2>Exemplo de área com destaque</h2>
+      <p>
+        Esta seção foi feita para demonstrar bordas, espaçamentos internos e alinhamento.
+      </p>
+
+      <div class="caixa-exemplo">
+        <p>
+          Esta é uma caixa com <strong>padding</strong>, <strong>border</strong> e
+          <strong>background-color</strong>.
+        </p>
+        <a href="#" class="botao">Saiba mais</a>
+      </div>
+    </section>
+
+    <section id="contato" class="bloco">
+      <h2>Contato</h2>
+      <p>
+        Em um projeto real, aqui poderiam estar e-mail, telefone ou formulário.
+      </p>
+      <p>
+        Exemplo de link:
+        <a href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Site de exemplo para aula introdutória de CSS</p>
+  </footer>
+
+</body>
+</html>
